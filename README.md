@@ -1,1 +1,1 @@
-# DLC-based-dotfiles
+# Python 3.8 開発環境
