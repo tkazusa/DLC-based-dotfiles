@@ -1,4 +1,4 @@
-# Python 3.9 開発環境
+# Development environment for Python 3.9 
 
 ## Requirement
 - Ubuntu Server 20.04 LTS (HVM), SSD Volume Type
@@ -34,7 +34,7 @@ $ docker build -t dev-docker .
 $ docker run -d -p 10000:22 dev-docker
 ```
 
-## Attachment to the Docker container
+## Attaching to the Docker container
 After launching the dev-docker container, you can access to it via SSH or VSCode Remote SSH.
 
 ```
