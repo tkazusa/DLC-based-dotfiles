@@ -28,7 +28,7 @@ function fish_prompt
     echo $pwd $p
 end
 
-#Git
+# Git
 set git_dirty_color red
 set git_not_dirty_color green
 
@@ -55,3 +55,12 @@ function fish_right_prompt
     echo [(parse_git_branch)]
   end
 end
+
+
+# For pyenv
+set -Ux PYENV_ROOT $HOME/.pyenv
+set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+
+# For poetry
+status is-login; and pyenv init --path | source
+status is-interactive; and pyenv init - | source

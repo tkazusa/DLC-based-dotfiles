@@ -12,6 +12,7 @@ source $DOTDIR/install.d/install-rust.sh
 source $DOTDIR/install.d/pip-install.sh
 source $DOTDIR/install.d/install-amplify.sh
 source $DOTDIR/install.d/install-fish.sh
+source $DOTDIR/install.d/install-py-pkg-manager.sh
 source $DOTDIR/install.d/install-tmux.sh
 # source $DOTDIR/install.d/install-docker.sh
 source $DOTDIR/install.d/link.sh

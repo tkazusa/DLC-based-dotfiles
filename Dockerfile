@@ -1,5 +1,5 @@
-# python:3.8-buster is based on Debian 10.10
-FROM python:3.8-buster
+# python:3.9-buster is based on Debian 10.10
+FROM python:3.9-buster
 # Deep Learning Container from AWS is optional for CUDA enbironment.
 # To utilize AWS DLC, you need to login AWS ECR reposirory.
 # FROM 763104351884.dkr.ecr.us-east-1.amazonaws.com/pytorch-training:1.9.0-gpu-py38-cu111-ubuntu20.04
