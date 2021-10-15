@@ -1,4 +1,4 @@
-# python:3.9-buster is based on Debian 10.10
+# python:3.9-buster is based on Debian 10.11
 FROM python:3.9-buster
 # Deep Learning Container from AWS is optional for CUDA enbironment.
 # To utilize AWS DLC, you need to login AWS ECR reposirory.
@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
 
 # Setting up SSH server config.
-RUN echo 'root:screencast' | chpasswd
+RUN echo 'root:aaa' | chpasswd
 COPY dotfiles/configs/sshd/sshd_config /etc/ssh/sshd_config
 
 # SSH login fix. Otherwise user is kicked off after login
