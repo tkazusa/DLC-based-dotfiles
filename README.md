@@ -48,6 +48,7 @@ ssh-keygen -f "/home/ubuntu/.ssh/known_hosts" -R "[127.0.0.1]:10000"
 ```
 
 ## Python Develop Environment
+
 ### Switching python versions between environments
 To switch between Python versions, it is recommended to use pyenv.
 Details are in [the poetry document](https://python-poetry.org/docs/managing-environments/). 
@@ -55,3 +56,17 @@ Details are in [the poetry document](https://python-poetry.org/docs/managing-env
 $ pyenv install 3.6.9
 $ pyenv local 3.6.9
 ```
+
+## VSCode Extension
+
+### Python extension
+- [flake8](https://flake8.pycqa.org/en/latest/index.html#): Checking files for error (Ignore:`W293`, `W504`) 
+- [isort](https://pycqa.github.io/isort/): Orgnizing imports.
+- [black](https://black.readthedocs.io/en/stable/): Formatting according to PEP8
+
+### Pylance extension
+- [Pylance](https://github.com/microsoft/pylance-release): Checking files for type hint. Enabled as strict mode.
+
+### Python Docstring Generator extension
+- [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring):Generating a docstring following "Google" style.
+
