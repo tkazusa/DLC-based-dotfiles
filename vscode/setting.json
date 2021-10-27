@@ -1,0 +1,80 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.sideBar.location": "left",
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.renderCharacters": false,
+    "files.autoGuessEncoding": true,
+    "vim.useSystemClipboard": true,
+    "vim.leader": "s",
+    "vim.normalModeKeyBindings": [
+        {"before": ["<Leader>", "s"],"commands": [":split"]},
+        {"before": ["<Leader>", "v"],"commands": [":vsplit"]},
+        {"before": [">"],"commands" : ["editor.action.indentLines"]},                                                                    
+        {"before": ["<"],"commands" : ["editor.action.outdentLines"]},                                                                   
+        {"before": ["<Leader>", "u"],"after"   : ["g","t"]},                                                                             
+        {"before": ["<Leader>", "y"],"after"   : ["g","T"]},              
+        {"before": ["<Leader>", "h"],"commands": ["workbench.action.focusLeftGroup"]},                                                                              
+        {"before": ["<Leader>", "j"],"commands": ["workbench.action.focusBelowGroup"]},                                                                              
+        {"before": ["<Leader>", "k"],"commands": ["workbench.action.focusAboveGroup"]},                                                                              
+        {"before": ["<Leader>", "l"],"commands": ["workbench.action.focusRightGroup"]},                                                                              
+        {"before": ["<Leader>", "d"],"commands": ["workbench.action.closeActiveEditor"]},                                                                              
+        {"svbefore": ["<Leader>", "b"],"commands": ["workbench.action.toggleSidebarVisibility"]},
+        {"before": ["<Leader>", "f"],"commands": ["workbench.action.focusSideBar"]},                                                                              
+    ],
+
+    "vim.insertModeKeyBindings":[
+        {"before": ["j","j"],"after": ["<Esc>"]},
+        {"before": [";",";"],"commands": ["editor.action.triggerSuggest"]},
+        {"before": ["v","L"],"after": ["$","h"]},
+    ],
+
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {"before": [">"],"commands": ["editor.action.indentLines"]},
+        {"before": ["<"],"commands": ["editor.action.outdentLines"]},
+    ],
+    
+    "remote.SSH.useLocalServer": false,
+    
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=W293, W504",
+        "--max-line-length=119",
+    ],
+    
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "/usr/local/bin/black",
+    "python.formatting.blackArgs": ["--line-length", "119"],
+    "[python]": {
+        "editor.formatOnSave": true
+      },
+
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+
+    "python.analysis.typeCheckingMode": "strict",
+    
+    "autoDocstring.docstringFormat": "google",
+
+    "remote.SSH.remotePlatform": {
+        "aws-dev": "linux",
+        "sfn": "linux",
+        "sm-sdk": "linux",
+        "denso-s3": "linux",
+        "sm-ddp": "linux",
+        "aws-dev2": "linux",
+        "aws_docker": "linux",
+        "aws-dev-docker": "linux",
+        "auto-demo": "linux",
+        "auto-demo-docker": "linux"
+    },
+
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "editor.fontSize": 10,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "window.zoomLevel": 1,
+    "json.schemas": [],
+}
