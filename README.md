@@ -32,6 +32,7 @@ $ git clone https://github.com/tkazusa/dotfiles-docker.git
 $ cd dotfiles-docker
 $ docker build -t dev-docker .
 $ docker run -d -p 10000:22 dev-docker
+$ docker run -d -p 10000:22 /home/ubuntu/aws-dev-docker:/root/aws-dev-docker dev-docker
 ```
 
 ## Attaching to the Docker container
