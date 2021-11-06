@@ -1,5 +1,7 @@
 # Development environment for Python 3.9 
 
+
+
 ## Requirement
 - Ubuntu Server 20.04 LTS (HVM), SSD Volume Type
 - Docker >= 20.10.07
@@ -7,6 +9,31 @@
 ## Deployment
 Launch an EC2 instance with Ubuntu 20.04 LTS AMI then access to the EC2 instance via SSH. Sample `.ssh/config` is following. 
 
+
+## On EC2
+
+```
+$ git clone https://github.com/tkazusa/dotfiles-docker.git
+```
+
+Modify `setup.sh` for EC2 deployment.
+```bash
+# For remote EC2.
+$HOME=/home/ubuntu
+DOTDIR=/home/ubuntu/dotfiles-docker/dotfiles
+```
+
+Then, run `setup.sh`
+
+```
+$ cd dotfiles-docker/dotfiles
+$ sudo bash setup.sh
+```
+
+Run `sudo `
+
+## On Docker
+NOT WORKING: based on the [article](https://k-hyoda.hatenablog.com/entry/2020/11/29/180943).
 ```
 Host aws-dev
     HostName ec2-X-XXX-XX-XXX.compute-1.amazonaws.com

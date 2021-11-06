@@ -1,6 +1,10 @@
 #!/bin/bash
 DOTDIR=$HOME/.dotfiles
 
+# For remote EC2.
+# $HOME=/home/ubuntu
+# DOTDIR=/home/ubuntu/dotfiles-docker/dotfiles
+
 # --------------------
 # Install packages
 # --------------------
